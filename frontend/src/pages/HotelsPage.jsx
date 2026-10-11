@@ -36,6 +36,9 @@ export function HotelsPage({ onNavigate }) {
       case 'hyderabad': return '🏛️'
       case 'bengaluru': return '💼'
       case 'jaipur': return '🏰'
+      case 'kerala': return '🌴'
+      case 'udaipur': return '🏯'
+      case 'delhi': return '🕌'
       default: return '📍'
     }
   }

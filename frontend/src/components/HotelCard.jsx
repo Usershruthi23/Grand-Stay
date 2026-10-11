@@ -7,6 +7,9 @@ export function HotelCard({ hotel, onSelect }) {
       case 'jaipur': return '🏰'
       case 'bengaluru': return '💼'
       case 'hyderabad': return '🏛️'
+      case 'kerala': return '🌴'
+      case 'udaipur': return '🏯'
+      case 'delhi': return '🕌'
       default: return '📍'
     }
   }
@@ -22,16 +25,26 @@ export function HotelCard({ hotel, onSelect }) {
   }
 
   const getAmenities = (loc) => {
-    if (loc?.toLowerCase() === 'goa') {
-      return ['🏖️ Beachfront', '🏊 Infinity Pool', '🍸 Sunset Bar', '📶 Free Wi-Fi']
+    switch (loc?.toLowerCase()) {
+      case 'goa':
+        return ['🏖️ Beachfront', '🏊 Infinity Pool', '🍸 Sunset Bar', '📶 Free Wi-Fi']
+      case 'mumbai':
+        return ['🌊 Sea View', '🍳 Gourmet Buffet', '🧖 Luxury Spa', '🚗 Valet']
+      case 'jaipur':
+        return ['👑 Royal Courtyard', '🎭 Cultural Shows', '🍳 Heritage Dining', '❄️ AC']
+      case 'kerala':
+        return ['🌴 Backwaters', '🧘 Ayurvedic Spa', '🚣 Canoe Rides', '🌿 Organic Farm']
+      case 'udaipur':
+        return ['🛶 Lake Views', '🕯️ Candlelit Dining', '🏯 Palace Heritage', '🎶 Cultural Evenings']
+      case 'delhi':
+        return ['🏛️ Heritage View', '🍽️ Fine Dining', '🏋️ Fitness Club', '🚕 Airport Transfer']
+      case 'hyderabad':
+        return ['🏛️ City Views', '🍛 Hyderabadi Cuisine', '🧖 Royal Spa', '📶 Free Wi-Fi']
+      case 'bengaluru':
+        return ['🌳 Garden Terrace', '💼 Business Centre', '🏊 Rooftop Pool', '☕ All-Day Café']
+      default:
+        return ['🏊 Pool & Lounge', '🍳 Breakfast Included', '📶 5G Wi-Fi', '🏋️ Fitness Gym']
     }
-    if (loc?.toLowerCase() === 'mumbai') {
-      return ['🌊 Sea View', '🍳 Gourmet Buffet', '🧖 Luxury Spa', '🚗 Valet']
-    }
-    if (loc?.toLowerCase() === 'jaipur') {
-      return ['👑 Royal Courtyard', '🎭 Cultural Shows', '🍳 Heritage Dining', '❄️ AC']
-    }
-    return ['🏊 Pool & Lounge', '🍳 Breakfast Included', '📶 5G Wi-Fi', '🏋️ Fitness Gym']
   }
 
   const rating = getRating(hotel.id)

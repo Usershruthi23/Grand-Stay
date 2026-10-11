@@ -34,6 +34,24 @@ const POPULAR_DESTINATIONS = [
     emoji: '🏰',
     tagline: 'Regal Courtyards & Rajputana Elegance',
     image: 'https://images.unsplash.com/photo-1477587458883-47145ed94245?auto=format&fit=crop&w=600&q=80'
+  },
+  {
+    city: 'Kerala',
+    emoji: '🌴',
+    tagline: 'Backwaters, Spice Gardens & Ayurveda',
+    image: 'https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?auto=format&fit=crop&w=600&q=80'
+  },
+  {
+    city: 'Udaipur',
+    emoji: '🏯',
+    tagline: 'Lake Palaces & Romantic Rajasthan',
+    image: 'https://images.unsplash.com/photo-1537640538966-79f369143f8f?auto=format&fit=crop&w=600&q=80'
+  },
+  {
+    city: 'Delhi',
+    emoji: '🕌',
+    tagline: 'Capital Heritage & World-Class Stays',
+    image: 'https://images.unsplash.com/photo-1540541338287-41700207dee6?auto=format&fit=crop&w=600&q=80'
   }
 ]
 
