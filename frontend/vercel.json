@@ -1,8 +1,10 @@
+
 {
+  "$schema": "https://openapi.vercel.sh/vercel.json",
   "rewrites": [
     {
       "source": "/api/:path*",
-      "destination": "https://grandstay-k275.onrender.com/api/:path*"
+      "destination": "https://stay-6aso.onrender.com/api/:path*"
     }
   ]
 }
