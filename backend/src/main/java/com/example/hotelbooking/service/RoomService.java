@@ -6,6 +6,7 @@ import org.springframework.stereotype.Service;
 
 import com.example.hotelbooking.dto.RoomResponse;
 import com.example.hotelbooking.entity.Room;
+import com.example.hotelbooking.exception.ResourceNotFoundException;
 import com.example.hotelbooking.repository.RoomRepository;
 
 @Service
@@ -29,7 +30,7 @@ public class RoomService {
 
         Room room = roomRepository.findById(id)
                 .orElseThrow(() ->
-                        new RuntimeException("Room not found"));
+                        new ResourceNotFoundException("Room not found"));
 
         return toResponse(room);
     }

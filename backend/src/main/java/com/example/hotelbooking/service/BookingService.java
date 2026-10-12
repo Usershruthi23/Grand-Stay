@@ -4,6 +4,7 @@ import java.time.LocalDate;
 import java.util.List;
 
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import com.example.hotelbooking.dto.BookingResponse;
 import com.example.hotelbooking.dto.CreateBookingRequest;
@@ -19,6 +20,7 @@ import com.example.hotelbooking.repository.RoomRepository;
 import com.example.hotelbooking.repository.UserRepository;
 
 @Service
+@Transactional
 public class BookingService {
 
     private final BookingRepository bookingRepository;
