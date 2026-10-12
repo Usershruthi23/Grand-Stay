@@ -28,7 +28,7 @@ A beginner-friendly, production-ready full-stack **Hotel Booking & Management Sy
 |---|---|
 | **Backend** | Java 23.0.2, Spring Boot 4.1.1, Spring Data JPA, Spring Security |
 | **Database** | MySQL (`hotel_booking_db`) |
-| **Frontend** | HTML5, CSS3, JavaScript (ES6+ Vanilla API), Google Fonts |
+| **Frontend** | REACT |
 | **Security** | BCrypt Password Hashing, Session-based Security Context |
 | **Build Tool** | Apache Maven |
 
